@@ -1,1 +1,3 @@
+import bbnb
 
+bbnb.plot()
