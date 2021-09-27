@@ -32,7 +32,7 @@ def calc_err(k, dist_arr, y, mode):
     result = np.less(np.sum(knn_labels == 0, axis=1), np.sum(knn_labels == 1, axis=1))
     err = np.sum(result.astype(int) != y.astype(int)) / y.size
     if k == 1 or k == 10 or k == 100:
-        print('At alpha =', k, mode, 'error rate =', err)
+        print('At k =', k, mode, 'error rate =', err)
     return err
 
 
