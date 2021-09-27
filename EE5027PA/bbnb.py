@@ -76,3 +76,5 @@ def plot():
     plt.xlabel(r'$\alpha$')
     plt.ylabel('Error Rate')
     plt.savefig('q1.pdf', dpi=150)
+
+    print()

@@ -81,6 +81,7 @@ def calc_err(lam, X, y, mode):
 
 
 def plot():
+    print('Running a logistic regression model')
     lam_vals = np.r_[1:11:1, 15:105:5]
     training_err = np.zeros(len(lam_vals))
     test_err = np.zeros(len(lam_vals))
@@ -98,3 +99,5 @@ def plot():
     plt.ylabel("Error Rate")
     plt.title('Logistic regression')
     plt.savefig("q3.pdf", dpi=150)
+
+    print()

@@ -56,3 +56,5 @@ def plot():
     plt.ylabel('Error Rate')
     plt.title('K-Nearest Neighbors')
     plt.savefig('q4.pdf', dpi=150)
+
+    print()
