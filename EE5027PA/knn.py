@@ -53,6 +53,6 @@ def plot():
     plt.plot(k_vals, test_err, label='test')
     plt.legend()
     plt.xlabel('k')
-    plt.ylabel("Error Rate")
+    plt.ylabel('Error Rate')
     plt.title('K-Nearest Neighbors')
-    plt.savefig("q4.pdf", dpi=150)
+    plt.savefig('q4.pdf', dpi=150)
