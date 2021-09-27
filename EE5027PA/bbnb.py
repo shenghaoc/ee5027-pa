@@ -3,8 +3,6 @@ import numpy as np
 import scipy.io as sio
 import matplotlib.pyplot as plt
 
-print('Running Beta-Binomial naive Bayes classifier')
-
 # 57 columns for X, 1 column for y
 # 3065 for training, 1536 for test
 # Need to squeeze out y from single-vaue ndarray
@@ -43,14 +41,6 @@ def execute(Xsamp, p_x_1_arr_y_0, p_x_1_arr_y_1):
     return log_p_y_1 > log_p_y_0
 
 
-def calc_train_err(a, p_x_1_arr_y_0, p_x_1_arr_y_1):
-    err_cnt = 0
-    for v in range(len(ytrain)):
-        if execute(Xtrain[v], p_x_1_arr_y_0, p_x_1_arr_y_1) != ytrain[v]:
-            err_cnt += 1
-    return err_cnt / len(ytrain)
-
-
 def calc_err(a, p_x_1_arr_y_0, p_x_1_arr_y_1, X, y, mode):
     err_cnt = 0
     for v in range(len(y)):
@@ -64,6 +54,7 @@ def calc_err(a, p_x_1_arr_y_0, p_x_1_arr_y_1, X, y, mode):
 
 
 def plot():
+    print('Running Beta-Binomial naive Bayes classifier')
     a_vals = np.arange(0, 100, 0.5)
 
     training_err = np.zeros(len(a_vals))
