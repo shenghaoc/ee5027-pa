@@ -55,7 +55,7 @@ def calc_err(X, y, mode):
     print(mode, 'error rate =', err)
 
 
-def plot():
+def run():
     print('Running Gaussian naive Bayes classifier')
     calc_err(Xtrain, ytrain, 'training')
     calc_err(Xtest, ytest, 'test')
