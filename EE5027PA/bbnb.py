@@ -55,7 +55,7 @@ def calc_err(a, p_x_1_arr_y_0, p_x_1_arr_y_1, X, y, mode):
 
 def plot():
     print('Running Beta-Binomial naive Bayes classifier')
-    a_vals = np.arange(0, 100, 0.5)
+    a_vals = np.arange(0, 100.5, 0.5)
 
     training_err = np.zeros(len(a_vals))
     test_err = np.zeros(len(a_vals))
