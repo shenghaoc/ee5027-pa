@@ -1,5 +1,10 @@
 # EE5907/EE5027 Programming Assignment
 
+## Highlight
+Use of [broadcasting](https://numpy.org/doc/1.21/user/basics.broadcasting.html) (based on last example) to [compute Euclidean distance](EE5027PA/knn.py#L19) for KNN, superior performance compared to for-loop approaches.
+
+## Original README
+
 Please run `EE5027PA.py`, it will call the `plot` or `run` functions in the four separate Python files. Running these files themselves will not generate any output.
 
 The file names are initials of the names of the classifiers.
